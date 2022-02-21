@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+main {
+    margin: 1.75em;
+    margin-bottom: 5em;
+}
+
+header {
+    background: url("images/bg-header-desktop.png") top/contain;
+    background-repeat: no-repeat;
+    padding: 0 1em;
+}
+
+header img {
+    padding: 5em 0em 3em;
+}
+
+h1, h2, h3 {
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+h2 {
+    padding-top: 3em;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+
+button {
+    background-color: var(--strong-cyan);
+    color: white;
+    border: none;
+    border-radius: 5em;
+    padding: 1em 0;
+    margin-bottom: 1.5em;
+    min-width: 80%;
+    box-shadow: 0px 3px 0px var(--strong-cyan), 0 5px 10px var(--strong-cyan);
+    font-size: 1em;
+    transition: opacity 0.25s ease-in;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.mac-download {
+    background-color: var(--light-blue);
+    box-shadow: 0px 3px 0px var(--light-blue), 0 5px 10px var(--light-blue);
+}
+
+.img-computer img, .access img {
+    width: min(85%, 60rem);
+}
+
+.img-computer img{
+    padding-bottom: 2em;
+}
+
+.blacklist {
+    margin-top: 3em;
+}
+
+.company-container div {
+    margin: 3em 0;
+}
+
+footer {
+    margin-bottom: 2em;
+}
+
+.logo-container {
+    transform: scale(0.5);
+}
+
+nav ul li a{
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+nav ul li {
+    margin: 1em 0;
+    list-style: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+nav ul li a:hover {
+    color: var(--strong-cyan);
+}
+
+.social:hover path{
+    fill: var(--strong-cyan);
+}
+
+@media (min-width: 768px) {
+    button {
+        display: inline-block;
+        min-width: 15%;
+        margin: 2.5em 1em 0 1em;
+    }
+    p {
+        padding: 0% 30%;
+    }
+    .container {
+        margin-top: 3em;
+        display: flex;
+    }
+    .img-computer img {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .container-info div {
+        padding: 1em 0;
+    }
+    .access img{
+        margin-top: 3em;
+    }
+    .workflow-container{
+        display: flex;
+    }
+    .workflow-container div {
+        margin-top: 2.5em;
+        width: 33%;
+    }
+    .workflow-container p {
+        padding: 0 6em;
+    }
+    .company-container{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 5em;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        display: flex;
+        padding: 1em 1em;
+    }
+    .socials a{
+        padding-right: 1em;
+    }
+}
