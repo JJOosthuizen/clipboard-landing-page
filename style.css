@@ -134,6 +134,7 @@ nav ul li a:hover {
     .container {
         margin-top: 3em;
         display: flex;
+        justify-content: center;
     }
     .img-computer img {
         padding: 0;
