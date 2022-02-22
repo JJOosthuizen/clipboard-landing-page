@@ -125,6 +125,8 @@ nav ul li a:hover {
         display: inline-block;
         min-width: 15%;
         margin: 2.5em 1em 0 1em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     p {
         padding: 0% 30%;
